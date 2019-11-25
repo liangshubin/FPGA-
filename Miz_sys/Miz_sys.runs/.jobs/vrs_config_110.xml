@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="system_ad7606_sample_0_0_synth_1" LaunchDir="E:/Shuai666/IP_test/glitchfilter_4_4_2gate_dmatimeout/Miz_sys/Miz_sys.runs/system_ad7606_sample_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

@@ -1,0 +1,42 @@
+20:27:17 **** Auto Build of configuration Debug for project PL2PS_DMA_Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/dma_intr.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dma_intr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PL2PS_DMA_Test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/dma_intr.d" -MT"src/dma_intr.o" -o "src/dma_intr.o" "../src/dma_intr.c"
+'Finished building: ../src/dma_intr.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PL2PS_DMA_Test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:152:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/sys_intr.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sys_intr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PL2PS_DMA_Test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sys_intr.d" -MT"src/sys_intr.o" -o "src/sys_intr.o" "../src/sys_intr.c"
+'Finished building: ../src/sys_intr.c'
+' '
+'Building file: ../src/timer_intr.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_intr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PL2PS_DMA_Test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_intr.d" -MT"src/timer_intr.o" -o "src/timer_intr.o" "../src/timer_intr.c"
+'Finished building: ../src/timer_intr.c'
+' '
+'Building target: PL2PS_DMA_Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PL2PS_DMA_Test_bsp/ps7_cortexa9_0/lib -o "PL2PS_DMA_Test.elf"  ./src/dma_intr.o ./src/main.o ./src/sys_intr.o ./src/timer_intr.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PL2PS_DMA_Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size PL2PS_DMA_Test.elf  |tee "PL2PS_DMA_Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  50176	   3860	  24584	  78620	  1331c	PL2PS_DMA_Test.elf
+'Finished building: PL2PS_DMA_Test.elf.size'
+' '
+
+20:27:20 Build Finished (took 3s.746ms)
+

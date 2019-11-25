@@ -1,0 +1,22 @@
+$date
+        2019-Oct-29 09:16:21
+$end
+$version
+        Vivado v2017.4 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 1 " system_i/axi_dma_0_mm2s_introut $end
+$var reg 1 # system_i/axi_dma_0_s2mm_introut $end
+$var reg 1 $ system_i/axi_dma_0_m_axis_mm2s_tlast $end
+$var reg 1 % system_i/axis_data_fifo_0_m_axis_tlast $end
+$var reg 32 & system_i/axis_data_fifo_0_axis_data_count [31:0] $end
+$var reg 32 F system_i/axis_data_fifo_0_axis_wr_data_count [31:0] $end
+$var reg 32 f system_i/axis_data_fifo_0_axis_rd_data_count [31:0] $end
+$var reg 1 (" _TRIGGER $end
+$var reg 1 )" _WINDOW $end
+$var reg 1 *" _GAP $end
+$upscope $end
+$enddefinitions $end

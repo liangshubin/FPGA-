@@ -1,0 +1,261 @@
+
+
+
+/*
+ * main.c
+ *
+ *  Created on: 2019年10月16日
+ *      Author: Administrator
+ */
+
+
+
+#include "uartps_intr.h"
+#include "dma_intr.h"
+#include "timer_intr.h"
+#include "sys_intr.h"
+#include "stdio.h"
+//#include "xgpio.h"
+
+static XScuGic Intc; //GIC
+static  XAxiDma AxiDma;
+static  XScuTimer Timer;//timer
+
+volatile u32 RX_success;
+volatile u32 TX_success;
+
+volatile u32 RX_ready=1;
+volatile u32 TX_ready=1;
+
+//#define TIMER_LOAD_VALUE    166666665 //0.5S
+
+#define TIMER_LOAD_VALUE    0x13D92D3F //1S
+
+XUartPs Uart_Ps;		/* The instance of the UART Driver */
+
+int x = 0;
+int Tries = NUMBER_OF_TRANSFERS;
+int i;
+int Index;
+u8 *TxBufferPtr= (u8 *)TX_BUFFER_BASE;
+u64 *RxBufferPtr=(u64 *)RX_BUFFER_BASE;
+
+/********************************************************/
+u8 SEND_LENGTH = 1;      //ADC发送的字节长度： 32*SEND_LENGTH
+int GATE = 4000;		 //门限值的设定
+int GLITCH_TIME = 50000;
+u32 send_data[4];
+u8  My_buffer[512] = {0};
+u8  My_buffer_backup[512] = {0};
+u8  start_flag [2] = {'*','*'};
+u8  over_flag [2] = {'#','#'};
+char Data_Updat_Flag = 0;
+/********************************************************/
+u32 channeldata[8]={0};
+u8 *pchannel;
+u32 *pchanneldata;
+u8 Value=0;
+float speed_tx;
+float speed_rx;
+//static XGpio Gpio;
+
+//#define AXI_GPIO_DEV_ID	        XPAR_AXI_GPIO_0_DEVICE_ID
+
+int axi_dma_test()
+{
+	int Status;
+	char speed_r = 0;
+	char speed_t = 0;
+	TxDone = 0;
+	RxDone = 0;
+	Error = 0;
+
+	//xil_printf( "----DMA Test----\r\n");
+
+	//xil_printf("PKT_LEN=%d\r\n",MAX_PKT_LEN);
+
+	for(Index = 0; Index < MAX_PKT_LEN; Index ++) {
+			TxBufferPtr[Index] = Value;
+
+			Value = (Value + 1) & 0xFF;
+	}
+	/* Flush the SrcBuffer before the DMA transfer, in case the Data Cache
+	 * is enabled
+	 */
+	Xil_DCacheFlushRange((u32)TxBufferPtr, MAX_PKT_LEN);
+	Timer_start(&Timer);
+	while(1)
+	//for(i = 0; i < Tries; i ++)
+	{
+		//RX DMA Transfer
+		pchannel=RxBufferPtr;
+		pchanneldata=RxBufferPtr;
+		for(int y=0;y<8;y++)
+		{
+			channeldata[y]=0;
+		}
+		if(RX_ready)
+		{
+		   RX_ready=0;
+		   Status = XAxiDma_SimpleTransfer(&AxiDma,(u64)RxBufferPtr,
+					(u32)(MAX_PKT_LEN), XAXIDMA_DEVICE_TO_DMA);
+
+		/******************************************************************************/
+
+		   /*通道数据采集*/
+		   for(int y=0;y<SEND_LENGTH*8;y++)
+		   {
+			   if(channeldata[(*pchannel)>>24]==0)
+					   {
+				   channeldata[(*pchannel)>>24]=*pchanneldata;
+					   }
+			   pchannel+=1;
+			   pchanneldata=pchannel;
+		   }
+		   int k=0;
+		   for(int b=0;b<8;b++)
+		   {
+			   if(channeldata[b]!=0)
+			   {
+				   send_data[k]=channeldata[b];
+				   k++;
+			   }
+			   if(k==4)
+				   break;
+		   }
+		   //memcpy((void*)My_buffer,channeldata,32);
+
+		   /*if (My_buffer_backup != My_buffer)
+		   {
+			   Data_Updat_Flag = 1;
+			   memcpy((void*)My_buffer_backup,My_buffer,32);
+		   }
+		   else
+		   {
+			   Data_Updat_Flag = 0;
+		   }*/
+		   if (k==4)
+		   {
+			   //Uart_Send(&Uart_Ps, start_flag, 2);
+			   Uart_Send(&Uart_Ps, channeldata, 16);
+			   Uart_Send(&Uart_Ps, over_flag, 2);
+			   /*****************************
+			   for(i=0;i<80;i++)
+			   {
+				   //printf( "%d\r\n",i);
+				   u8 Test_buffer = {My_buffer[0+4*i],My_buffer[1+4*i],My_buffer[2+4*i],My_buffer[3+4*i]};
+				   Uart_Send(&Uart_Ps, (u8 *)Test_buffer, 4);
+			   }
+			   /*****************************/
+
+
+		   }
+
+	   /*****************************************************************************/
+		  // Uart_Send(&Uart_Ps, My_buffer, 32);
+		   if (Status != XST_SUCCESS) {return XST_FAILURE;}
+		}
+
+		//TX DMA Transfer
+		if(TX_ready)
+		{
+			TX_ready=0;
+			Status = XAxiDma_SimpleTransfer(&AxiDma,(u32) TxBufferPtr,
+					(u32)(MAX_PKT_LEN), XAXIDMA_DMA_TO_DEVICE);
+
+			if (Status != XST_SUCCESS) {return XST_FAILURE;}
+		}
+
+		if(RxDone)
+		{
+			//确保cache的数据都进入DDR
+			Xil_DCacheInvalidateRange((u64)RxBufferPtr, MAX_PKT_LEN);
+			RxDone=0;
+			RX_ready=1;
+			//RX_ready=0;
+			RX_success++;
+		}
+
+	}
+
+
+
+		if(TxDone)
+		{
+			TxDone=0;
+			TX_ready=1;
+			TX_success++;
+		}
+
+
+		if (Error)
+		{
+			xil_printf("Failed test transmit%s done, "
+			"receive%s done\r\n", TxDone? "":" not",
+							RxDone? "":" not");
+			goto Done;
+		}
+
+
+	/* Disable TX and RX Ring interrupts and return success */
+	DMA_DisableIntrSystem(&Intc, TX_INTR_ID, RX_INTR_ID);
+Done:
+	xil_printf("--- Exiting Test --- \r\n");
+
+	return XST_SUCCESS;
+
+}
+
+int init_intr_sys()
+{
+	DMA_Intr_Init(&AxiDma,0);//initial interrupt system
+	Timer_init(&Timer,TIMER_LOAD_VALUE,0);
+	Init_Intr_System(&Intc); // initial DMA interrupt system
+	Setup_Intr_Exception(&Intc);
+	DMA_Setup_Intr_System(&Intc,&AxiDma,TX_INTR_ID,RX_INTR_ID);//setup dma interrpt system
+	Timer_Setup_Intr_System(&Intc,&Timer,TIMER_IRPT_INTR);
+	DMA_Intr_Enable(&Intc,&AxiDma);
+	/*****************************************/
+	Uart_Init(&Uart_Ps,UART_DEVICE_ID);
+	//printf( "UART initial success\r\n");
+	/*****************************************/
+
+}
+
+void ad7606_send_length(u32 adc_addr, u32 send_len)
+{
+	/* provide length to AD7606 */
+	AD7606_SAMPLE_mWriteReg(adc_addr, REG0_OFFSET, send_len)  ;
+}
+
+void ad7606_gate(u32 adc_addr, u32 gate)
+{
+	/* provide length to AD7606 */
+	AD7606_SAMPLE_mWriteReg(adc_addr, REG1_OFFSET, gate)  ;
+}
+
+void ad7606_glitch_time(u32 adc_addr, u32 glitch_time)
+{
+	/* provide length to AD7606 */
+	AD7606_SAMPLE_mWriteReg(adc_addr, REG2_OFFSET, glitch_time)  ;
+}
+
+
+
+int main(void)
+{
+	init_intr_sys();
+	/*设定门限值*/
+	ad7606_gate(AD7606_BASE, GATE);
+	/*ADC发送的字节长度：32*SEND_LENGTH*/
+	ad7606_send_length(AD7606_BASE,SEND_LENGTH);
+	ad7606_glitch_time(AD7606_BASE,GLITCH_TIME);
+	axi_dma_test();
+
+}
+
+
+
+
+
+

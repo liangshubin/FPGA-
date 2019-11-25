@@ -1,0 +1,416 @@
+$date
+        2019-Nov-15 11:40:47
+$end
+$version
+        Vivado v2017.4 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 32 " system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/sample_cnt [31:0] $end
+$var reg 16 B system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_data [15:0] $end
+$var reg 3 R system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/state [2:0] $end
+$var reg 32 U system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/sample_len [31:0] $end
+$var reg 31 u system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/adc_buf_data [30:0] $end
+$var reg 1 6" u_ila_0_adc_buf_data $end
+$var reg 8 7" system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ch_sel_d2 [7:0] $end
+$var reg 16 ?" system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_if_m0/ad_ch2 [15:0] $end
+$var reg 16 O" system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_if_m0/ad_ch1 [15:0] $end
+$var reg 24 _" system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_if_m0/begin_moment_ch8 [23:0] $end
+$var reg 24 w" system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_if_m0/end_moment_ch1 [23:0] $end
+$var reg 32 1# system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_if_m0/data_buf_ch7_backup [31:0] $end
+$var reg 32 Q# system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_if_m0/data_buf_ch8 [31:0] $end
+$var reg 24 q# system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_if_m0/end_moment_ch2 [23:0] $end
+$var reg 24 +$ system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_if_m0/begin_moment_ch1 [23:0] $end
+$var reg 32 C$ system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_if_m0/data_buf_ch1 [31:0] $end
+$var reg 32 c$ system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_if_m0/data_buf_ch7 [31:0] $end
+$var reg 25 %% system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_if_m0/delay_timmer [24:0] $end
+$var reg 24 >% system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_if_m0/begin_moment_ch2 [23:0] $end
+$var reg 8 V% system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_if_m0/begin_flag [7:0] $end
+$var reg 24 ^% system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_if_m0/data_buf_ch2_1 [23:0] $end
+$var reg 1 v% u_ila_0_data_buf_ch2_1 $end
+$var reg 1 w% system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_if_m0/data_buf_ch2 $end
+$var reg 6 x% u_ila_0_data_buf_ch2 [31:26] $end
+$var reg 24 ~% system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_if_m0/begin_moment_ch7 [23:0] $end
+$var reg 8 8& system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_if_m0/data_valid_ch [7:0] $end
+$var reg 32 @& system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_if_m0/data_buf_ch8_backup [31:0] $end
+$var reg 4 `& system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_if_m0/state [3:0] $end
+$var reg 16 d& system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_if_m0/sample_cnt [15:0] $end
+$var reg 1 t& system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_busy $end
+$var reg 1 u& system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_first_data $end
+$var reg 1 v& system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_rd $end
+$var reg 1 w& system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_if_m0/ad_cs $end
+$var reg 1 x& system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_if_m0/ad_rd $end
+$var reg 1 y& system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_if_m0/ad_reset $end
+$var reg 1 z& system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_if_m0/ad_sample_valid $end
+$var reg 1 {& system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/adc_buf_en $end
+$var reg 1 |& system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/adc_buf_rd $end
+$var reg 1 }& system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_if_m0/count_start $end
+$var reg 1 ~& system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/empty $end
+$var reg 1 !' system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_if_m0/rd_valid $end
+$var reg 1 "' system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_if_m0/start_last_flag_ch1 $end
+$var reg 1 #' system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_if_m0/start_last_flag_ch2 $end
+$var reg 1 $' _TRIGGER $end
+$var reg 1 %' _WINDOW $end
+$var reg 1 &' _GAP $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 "
+b0 B
+b1 R
+b1 U
+b0 u
+06"
+b0 7"
+b110010110011 ?"
+b110010110111 O"
+b11101100110001110111110 _"
+b11110100011100011101011 w"
+b110011101100110001110111110 1#
+b111011101100110001110111110 Q#
+b11101100110001000000011 q#
+b11110100011101010100110 +$
+b11110100011101010100110 C$
+b110011101100110001110111110 c$
+b0 %%
+b11101100110001110111110 >%
+b0 V%
+b11101100110001110111110 ^%
+1v%
+0w%
+b0 x%
+b11101100110001110111110 ~%
+b0 8&
+b111011101100110001110111110 @&
+b11 `&
+b1101101101001000 d&
+1t&
+0u&
+1v&
+1w&
+1x&
+0y&
+1z&
+0{&
+0|&
+0}&
+1~&
+0!'
+1"'
+1#'
+0$'
+1%'
+0&'
+$end
+#82
+0t&
+#83
+b100 `&
+#84
+0v&
+0w&
+0x&
+#85
+b110010100010 B
+#86
+b110010110111 B
+1u&
+#87
+b101 `&
+b1101101101001001 d&
+1v&
+1x&
+1!'
+#88
+0v&
+0x&
+#90
+b110010110100 B
+0u&
+#91
+b110010110100 ?"
+b110 `&
+1v&
+1x&
+#92
+0v&
+0x&
+#93
+b110010110110 B
+#94
+b110010110011 B
+#95
+b111 `&
+1v&
+1x&
+#96
+0v&
+0x&
+#98
+b110010110100 B
+#99
+b1000 `&
+1v&
+1x&
+#100
+b1000 8&
+0v&
+0x&
+1$'
+#101
+b0 R
+b11011110110111010110011000 u
+b0 8&
+1{&
+#102
+b10 R
+b0 u
+0{&
+#103
+b1001 `&
+1v&
+1x&
+#104
+b10000 8&
+0v&
+0x&
+#105
+b100011110110111010110011000 u
+b0 8&
+1{&
+#106
+b110010110101 B
+b0 u
+0{&
+#107
+b1010 `&
+1v&
+1x&
+1|&
+0~&
+#108
+b100000 8&
+0v&
+0x&
+0|&
+1~&
+#109
+b101011110110111010110011000 u
+b0 8&
+1{&
+#110
+b110010111001 B
+b0 u
+0{&
+#111
+b1011 `&
+1v&
+1x&
+1|&
+0~&
+#112
+b110011110110111010110011000 c$
+b11110110111010110011000 ~%
+b1000000 8&
+0v&
+0x&
+0|&
+1~&
+#113
+b110011110110111010110011000 u
+b110011110110111010110011000 1#
+b0 8&
+1{&
+#114
+b0 u
+0{&
+#115
+b1100 `&
+1v&
+1x&
+1|&
+0~&
+#116
+b11110110111010110011000 _"
+b111011110110111010110011000 Q#
+b10000000 8&
+b0 `&
+1w&
+0|&
+1~&
+0!'
+#117
+b111011110110111010110011000 u
+b0 8&
+b111011110110111010110011000 @&
+1{&
+#118
+b0 u
+0{&
+#119
+1|&
+0~&
+#120
+0|&
+1~&
+#123
+b1 R
+1|&
+0~&
+#124
+0|&
+1~&
+#137
+b1 `&
+#140
+b10 `&
+#142
+1t&
+#146
+b11 `&
+#524
+0t&
+#525
+b111 `&
+#526
+0v&
+0x&
+#530
+b1000 `&
+1v&
+1x&
+#531
+0v&
+0x&
+#534
+b1001 `&
+1v&
+1x&
+#535
+0v&
+0x&
+#538
+b1010 `&
+1v&
+1x&
+#539
+0v&
+0x&
+#542
+b1011 `&
+1v&
+1x&
+#543
+0v&
+0x&
+#546
+b1100 `&
+1v&
+1x&
+#547
+b0 `&
+#568
+b1 `&
+#571
+b10 `&
+#573
+1t&
+#577
+b11 `&
+#955
+0t&
+#956
+b100 `&
+#957
+0v&
+0w&
+0x&
+#958
+b110010111011 B
+#959
+b110010110111 B
+1u&
+#960
+b101 `&
+b1101101101001010 d&
+1v&
+1x&
+1!'
+#961
+0v&
+0x&
+#963
+b110010110010 B
+0u&
+#964
+b110010110010 ?"
+b110 `&
+1v&
+1x&
+#965
+0v&
+0x&
+#968
+b111 `&
+1v&
+1x&
+#969
+0v&
+0x&
+#971
+b110010110100 B
+#972
+b1000 `&
+1v&
+1x&
+#973
+0v&
+0x&
+#975
+b110010110101 B
+#976
+b1001 `&
+1v&
+1x&
+#977
+0v&
+0x&
+#979
+b110010110100 B
+#980
+b1010 `&
+1v&
+1x&
+#981
+0v&
+0x&
+#982
+b110010110110 B
+#983
+b110010111010 B
+#984
+b1011 `&
+1v&
+1x&
+#985
+0v&
+0x&
+#988
+b1100 `&
+1v&
+1x&
+#989
+b0 `&
+1w&
+0!'
+#1010
+b1 `&
+#1013
+b10 `&
+#1015
+1t&
+#1019
+b11 `&

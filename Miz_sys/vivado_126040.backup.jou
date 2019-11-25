@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat Nov 23 22:18:38 2019
+# Process ID: 126040
+# Current directory: G:/glitchfilter_4_4_2gate_dmatimeout/Miz_sys
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent126620 G:\glitchfilter_4_4_2gate_dmatimeout\Miz_sys\Miz_sys.xpr
+# Log file: G:/glitchfilter_4_4_2gate_dmatimeout/Miz_sys/vivado.log
+# Journal file: G:/glitchfilter_4_4_2gate_dmatimeout/Miz_sys\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project G:/glitchfilter_4_4_2gate_dmatimeout/Miz_sys/Miz_sys.xpr
+update_compile_order -fileset sources_1
+launch_sdk -workspace G:/glitchfilter_4_4_2gate_dmatimeout/Miz_sys/Miz_sys.sdk -hwspec G:/glitchfilter_4_4_2gate_dmatimeout/Miz_sys/Miz_sys.sdk/system_wrapper.hdf

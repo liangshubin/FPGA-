@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="E:/Shuai666/IP_test/CH22_AXI_DMA_PL2PS_oooook1114/Miz_sys/Miz_sys.hw/hw_1/wave/hw_ila_data_3/hw_ila_data_3.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="8090001fs"></ZoomEndTime>
+      <Cursor1Time time="512000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="349"></NameColumnWidth>
+      <ValueColumnWidth column_width="90"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="16" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject fp_name="system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_data" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ad7606_data[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_busy" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_busy</obj_property>
+      <obj_property name="ObjectShortName">ad7606_busy</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_if_m0/ad_rd" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_if_m0/ad_rd</obj_property>
+      <obj_property name="ObjectShortName">ad_rd</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_if_m0/state" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_if_m0/state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">state[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_first_data" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_first_data</obj_property>
+      <obj_property name="ObjectShortName">ad7606_first_data</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_if_m0/data_valid_ch" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_if_m0/data_valid_ch[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_valid_ch[7:0]</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_if_m0/ad_ch1" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_if_m0/ad_ch1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ad_ch1[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_if_m0/ad_ch2" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_if_m0/ad_ch2[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ad_ch2[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_if_m0/rd_valid" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_if_m0/rd_valid</obj_property>
+      <obj_property name="ObjectShortName">rd_valid</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_if_m0/ad_sample_valid" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_if_m0/ad_sample_valid</obj_property>
+      <obj_property name="ObjectShortName">ad_sample_valid</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_if_m0/delay_timmer" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_if_m0/delay_timmer[31:0]</obj_property>
+      <obj_property name="ObjectShortName">delay_timmer[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_if_m0/count_start" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/ad7606_if_m0/count_start</obj_property>
+      <obj_property name="ObjectShortName">count_start</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/adc_buf_data" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/adc_buf_data[30:0]</obj_property>
+      <obj_property name="ObjectShortName">adc_buf_data[30:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/gate" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/gate[15:0]</obj_property>
+      <obj_property name="ObjectShortName">gate[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/DMA_AXIS_tlast" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/DMA_AXIS_tlast</obj_property>
+      <obj_property name="ObjectShortName">DMA_AXIS_tlast</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/DMA_AXIS_tdata" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/DMA_AXIS_tdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DMA_AXIS_tdata[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+</wave_config>

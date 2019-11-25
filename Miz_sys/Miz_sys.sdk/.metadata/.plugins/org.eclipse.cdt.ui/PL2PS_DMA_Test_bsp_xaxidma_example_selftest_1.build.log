@@ -1,0 +1,23 @@
+10:16:46 **** Build of configuration Debug for project PL2PS_DMA_Test_bsp_xaxidma_example_selftest_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xaxidma_example_selftest.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xaxidma_example_selftest.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PL2PS_DMA_Test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xaxidma_example_selftest.d" -MT"src/xaxidma_example_selftest.o" -o "src/xaxidma_example_selftest.o" "../src/xaxidma_example_selftest.c"
+'Finished building: ../src/xaxidma_example_selftest.c'
+' '
+'Building target: PL2PS_DMA_Test_bsp_xaxidma_example_selftest_1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PL2PS_DMA_Test_bsp/ps7_cortexa9_0/lib -o "PL2PS_DMA_Test_bsp_xaxidma_example_selftest_1.elf"  ./src/xaxidma_example_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PL2PS_DMA_Test_bsp_xaxidma_example_selftest_1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size PL2PS_DMA_Test_bsp_xaxidma_example_selftest_1.elf  |tee "PL2PS_DMA_Test_bsp_xaxidma_example_selftest_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34448	   2260	  24520	  61228	   ef2c	PL2PS_DMA_Test_bsp_xaxidma_example_selftest_1.elf
+'Finished building: PL2PS_DMA_Test_bsp_xaxidma_example_selftest_1.elf.size'
+' '
+
+10:16:48 Build Finished (took 2s.108ms)
+

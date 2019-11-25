@@ -1,0 +1,61 @@
+13:52:26 **** Build of configuration Debug for project Mine ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/dma_intr.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dma_intr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Mine_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/dma_intr.d" -MT"src/dma_intr.o" -o "src/dma_intr.o" "../src/dma_intr.c"
+'Finished building: ../src/dma_intr.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Mine_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'axi_dma_test':
+../src/main.c:179:46: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+      Status = XAxiDma_SimpleTransfer(&AxiDma,(u64)RxBufferPtr,
+                                              ^
+../src/main.c:187:32: warning: passing argument 2 of 'Uart_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+            Uart_Send(&Uart_Ps, hits_of_event, sizeof(hit_t) * HITS_OF_EVENT_LEN);
+                                ^~~~~~~~~~~~~
+In file included from ../src/main.c:13:0:
+../src/uartps_intr.h:12:5: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'hit_t * {aka struct <anonymous> *}'
+ int Uart_Send(XUartPs* Uart_Ps, u8 *sendbuf, int length);
+     ^~~~~~~~~
+../src/main.c:198:30: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+    Xil_DCacheInvalidateRange((u64)RxBufferPtr, MAX_PKT_LEN);
+                              ^
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:240:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/sys_intr.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sys_intr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Mine_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sys_intr.d" -MT"src/sys_intr.o" -o "src/sys_intr.o" "../src/sys_intr.c"
+'Finished building: ../src/sys_intr.c'
+' '
+'Building file: ../src/timer_intr.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_intr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Mine_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_intr.d" -MT"src/timer_intr.o" -o "src/timer_intr.o" "../src/timer_intr.c"
+'Finished building: ../src/timer_intr.c'
+' '
+'Building file: ../src/uartps_intr.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uartps_intr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Mine_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/uartps_intr.d" -MT"src/uartps_intr.o" -o "src/uartps_intr.o" "../src/uartps_intr.c"
+'Finished building: ../src/uartps_intr.c'
+' '
+'Building target: Mine.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Mine_bsp/ps7_cortexa9_0/lib -o "Mine.elf"  ./src/dma_intr.o ./src/main.o ./src/sys_intr.o ./src/timer_intr.o ./src/uartps_intr.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Mine.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Mine.elf  |tee "Mine.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  48064	   3948	  27368	  79380	  13614	Mine.elf
+'Finished building: Mine.elf.size'
+' '
+
+13:52:36 Build Finished (took 10s.128ms)
+

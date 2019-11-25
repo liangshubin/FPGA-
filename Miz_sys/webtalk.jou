@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Oct 20 16:45:23 2019
+# Process ID: 2012
+# Current directory: E:/Shuai666/IP_test/CH22_AXI_DMA_PL2PS_1_backup/Miz_sys
+# Command line: wbtcv.exe -mode batch -source e:/shuai666/ip_test/ch22_axi_dma_pl2ps_1_backup/miz_sys/miz_sys.tmp/ad7606_sample_v1_0_project/ad7606_sample_v1_0_project.hw/webtalk/labtool_webtalk.tcl -notrace
+# Log file: E:/Shuai666/IP_test/CH22_AXI_DMA_PL2PS_1_backup/Miz_sys/webtalk.log
+# Journal file: E:/Shuai666/IP_test/CH22_AXI_DMA_PL2PS_1_backup/Miz_sys\webtalk.jou
+#-----------------------------------------------------------
+source e:/shuai666/ip_test/ch22_axi_dma_pl2ps_1_backup/miz_sys/miz_sys.tmp/ad7606_sample_v1_0_project/ad7606_sample_v1_0_project.hw/webtalk/labtool_webtalk.tcl -notrace

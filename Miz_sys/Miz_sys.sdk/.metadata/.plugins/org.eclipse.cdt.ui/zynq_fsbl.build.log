@@ -1,0 +1,8 @@
+10:46:17 **** Auto Build of configuration Debug for project zynq_fsbl ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: *** 没有规则可以创建“src/ps7_init.o”需要的目标“L:/02_example_SOC/02_example_SOC/CH22_AXI_DMA_PL2PS/Miz_sys/Miz_sys.sdk/system_dma_top_hw_platform_0/ps7_init.c”。 停止。
+
+10:46:17 Build Finished (took 504ms)
+

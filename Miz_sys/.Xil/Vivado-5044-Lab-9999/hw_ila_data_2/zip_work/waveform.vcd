@@ -1,0 +1,59 @@
+$date
+        2019-Nov-15 12:00:54
+$end
+$version
+        Vivado v2017.4 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 32 " system_i/system_ila_0/inst/net_slot_0_axis_tdata [31:0] $end
+$var reg 4 B system_i/system_ila_0/inst/net_slot_0_axis_tkeep [3:0] $end
+$var reg 1 F system_i/system_ila_0/inst/net_slot_0_axis_tvalid $end
+$var reg 1 G system_i/system_ila_0/inst/net_slot_0_axis_tready $end
+$var reg 1 H system_i/system_ila_0/inst/net_slot_0_axis_tlast $end
+$var reg 1 I _TRIGGER $end
+$var reg 1 J _WINDOW $end
+$var reg 1 K _GAP $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b111001001110000010111111111 "
+b1111 B
+0F
+1G
+0H
+0I
+1J
+0K
+$end
+#92
+b11001010000011011010001111 "
+1F
+#93
+0F
+#96
+b100001010000011011010001111 "
+1F
+#97
+0F
+#100
+b101001010000011011010001111 "
+1F
+1H
+1I
+#101
+0F
+0H
+#104
+b110001010000011011010001111 "
+1F
+#105
+0F
+#108
+b111001010000011011010001111 "
+1F
+#109
+0F

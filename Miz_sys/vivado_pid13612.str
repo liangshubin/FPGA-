@@ -1,0 +1,122 @@
+/*
+
+Xilinx Vivado v2017.4 (64-bit) [Major: 2017, Minor: 4]
+SW Build: 2086221 on Fri Dec 15 20:55:39 MST 2017
+IP Build: 2085800 on Fri Dec 15 22:25:07 MST 2017
+
+Process ID: 13612
+License: Customer
+
+Current time: 	Fri May 24 12:44:06 CST 2019
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 2
+Available disk space: 6 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	D:/Xilinx/Vivado/2017.4/tps/win64/jre
+JVM executable location: 	D:/Xilinx/Vivado/2017.4/tps/win64/jre/bin/java.exe
+
+User name: 	Administrator
+User home directory: C:/Users/Administrator
+User working directory: L:/XILINX_FPGA/02_example_SOC/CH22_AXI_DMA_PL2PS/Miz_sys
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/Xilinx/Vivado
+HDI_APPROOT: D:/Xilinx/Vivado/2017.4
+RDI_DATADIR: D:/Xilinx/Vivado/2017.4/data
+RDI_BINDIR: D:/Xilinx/Vivado/2017.4/bin
+
+Vivado preferences file location: C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/2017.4/vivado.xml
+Vivado preferences directory: C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/2017.4/
+Vivado layouts directory: C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/2017.4/layouts
+PlanAhead jar file location: 	D:/Xilinx/Vivado/2017.4/lib/classes/planAhead.jar
+Vivado log file location: 	L:/XILINX_FPGA/02_example_SOC/CH22_AXI_DMA_PL2PS/Miz_sys/vivado.log
+Vivado journal file location: 	L:/XILINX_FPGA/02_example_SOC/CH22_AXI_DMA_PL2PS/Miz_sys/vivado.jou
+Engine tmp dir: 	L:/XILINX_FPGA/02_example_SOC/CH22_AXI_DMA_PL2PS/Miz_sys/.Xil/Vivado-13612-123tjy
+
+GUI allocated memory:	190 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 566 MB
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 49 MB (+49191kb) [00:00:04]
+// [Engine Memory]: 482 MB (+353909kb) [00:00:04]
+// Opening Vivado Project: L:\XILINX_FPGA\02_example_SOC\CH22_AXI_DMA_PL2PS\Miz_sys\Miz_sys.xpr. Version: Vivado v2017.4 
+// bs (cj):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project L:/XILINX_FPGA/02_example_SOC/CH22_AXI_DMA_PL2PS/Miz_sys/Miz_sys.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 62 MB (+10968kb) [00:00:09]
+// [Engine Memory]: 584 MB (+81397kb) [00:00:09]
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 598 MB. GUI used memory: 36 MB. Current time: 5/24/19 12:44:08 PM CST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 680 MB (+70303kb) [00:00:18]
+// [Engine Memory]: 725 MB (+11767kb) [00:00:19]
+// [GUI Memory]: 66 MB (+1143kb) [00:00:20]
+// Tcl Message: open_project L:/XILINX_FPGA/02_example_SOC/CH22_AXI_DMA_PL2PS/Miz_sys/Miz_sys.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2017.4/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 941.613 ; gain = 227.008 
+// Project name: Miz_sys; location: L:/XILINX_FPGA/02_example_SOC/CH22_AXI_DMA_PL2PS/Miz_sys; part: xc7z020clg400-2
+dismissDialog("Open Project"); // bs (cj)
+// [GUI Memory]: 72 MB (+2148kb) [00:00:22]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 752 MB. GUI used memory: 50 MB. Current time: 5/24/19 12:44:23 PM CST
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_dma_top (system_dma_top.v)]", 1); // B (D, cj)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cj)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z (cj)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z (cj)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // ac (cj)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cj)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// aa (cj): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aa)
+dismissDialog("Launch SDK"); // aa (cj)
+// Tcl Message: launch_sdk -workspace L:/XILINX_FPGA/02_example_SOC/CH22_AXI_DMA_PL2PS/Miz_sys/Miz_sys.sdk -hwspec L:/XILINX_FPGA/02_example_SOC/CH22_AXI_DMA_PL2PS/Miz_sys/Miz_sys.sdk/system_dma_top.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace L:/XILINX_FPGA/02_example_SOC/CH22_AXI_DMA_PL2PS/Miz_sys/Miz_sys.sdk -hwspec L:/XILINX_FPGA/02_example_SOC/CH22_AXI_DMA_PL2PS/Miz_sys/Miz_sys.sdk/system_dma_top.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+// [Engine Memory]: 768 MB (+7265kb) [00:02:23]
+// [GUI Memory]: 76 MB (+621kb) [00:03:17]
+// HMemoryUtils.trashcanNow. Engine heap size: 792 MB. GUI used memory: 51 MB. Current time: 5/24/19 12:48:48 PM CST
+// Elapsed time: 275 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_dma_top (system_dma_top.v), system_i : system (system.bd), system (system.v)]", 3); // B (D, cj)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cj)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z (cj)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // Z (cj)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z (cj)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // ac (cj)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cj)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// aa (cj): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aa)
+dismissDialog("Launch SDK"); // aa (cj)
+// Tcl Message: launch_sdk -workspace L:/XILINX_FPGA/02_example_SOC/CH22_AXI_DMA_PL2PS/Miz_sys/Miz_sys.sdk -hwspec L:/XILINX_FPGA/02_example_SOC/CH22_AXI_DMA_PL2PS/Miz_sys/Miz_sys.sdk/system_dma_top.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace L:/XILINX_FPGA/02_example_SOC/CH22_AXI_DMA_PL2PS/Miz_sys/Miz_sys.sdk -hwspec L:/XILINX_FPGA/02_example_SOC/CH22_AXI_DMA_PL2PS/Miz_sys/Miz_sys.sdk/system_dma_top.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+// [GUI Memory]: 80 MB (+87kb) [00:06:26]
+// [GUI Memory]: 85 MB (+933kb) [00:06:41]
+// [GUI Memory]: 90 MB (+734kb) [00:08:56]
